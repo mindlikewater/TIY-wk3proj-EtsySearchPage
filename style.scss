@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+//create a square box
+@mixin square($size) {
+  width: $size;
+  height: $size;
+  float: left;
+}
+
+#logo a {
+  color: rgb(232, 87, 0);
+  font-family: 'Ledger', serif;
+  font-size: 36px;
+  text-decoration: none;
+  float: left;
+  padding-right: 25px;
+}
+
+form {
+  display: inline-block;
+
+  .search-field {
+    padding: 7px 10px;
+    width: 300px;
+  }
+  .search-submit {
+    padding: 8px 15px;
+    color: white;
+    border: 1px solid rgb(0, 154, 180);
+    background-color: rgb(0, 170, 199);
+  }
+}
+
+ul li {
+  display:inline;
+  text-align:left;
+  font-size:16px;
+  font-weight:bold;
+}
+
+.categories-box {
+  float: left;
+}
+
+.items-container {
+  margin: 20px auto;
+  max-width: 1000px;
+
+  .box {
+    border: 1px solid blue;
+    padding: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    @include square(220px);
+  }
+}
