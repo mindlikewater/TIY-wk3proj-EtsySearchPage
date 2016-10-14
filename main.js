@@ -1,21 +1,19 @@
-//array holds all the item boxes
-var itemsGrid = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
-
-function makeItemBox (box) {
-  return `<div class="box"></div>`;
+//function creates an empty box in HTML. Box will hold Etsy item.
+function makeItemBox () {
+  var itemBox = `<div class="box"></div>`;
+  return itemBox;
 };
 
-function buildGrid (itemsGrid) {
-  var boxesHTML = [];
+//function creates a grid of all the Etsy items. You tell it the
+//number of items you want in the grid.
+function buildGrid (items) {
+  var totalBoxes = [];
 
-  for (var i=0; i < itemsGrid.length; i++) {
-    var newHTML = makeItemBox(itemsGrid[i]);
-    boxesHTML.push(newHTML);
+  for (var i = 0; i < items; i++) {
+    var newHTML = makeItemBox(i);
+    totalBoxes.push(newHTML);
   }
-  return `
-  <div class="itemsGrid">${boxesHTML.join("")}</div>
-`;
+  return $(".items-container").html(totalBoxes);
 };
 
-newHTML = buildGrid(itemsGrid);
-$(".items-container").html(newHTML);
+buildGrid(16);
