@@ -4,6 +4,8 @@
   list-style: none;
 }
 
+$border: 1px solid lightgrey;
+
 //create a square box
 @mixin square($size) {
   width: $size;
@@ -20,8 +22,14 @@
   padding-right: 25px;
 }
 
+header ul li a {
+  color: rgb(0, 145, 202);
+  font-weight: lighter;
+}
+
 form {
   display: inline-block;
+  padding-right: 400px;
 
   .search-field {
     padding: 7px 10px;
@@ -35,26 +43,60 @@ form {
   }
 }
 
+nav {
+  border-top: $border;
+  border-bottom: $border;
+}
+
 ul li {
-  display:inline;
+  display: inline;
   text-align:left;
   font-size:16px;
   font-weight:bold;
+  padding-right: 20px;
+
+  a {
+    color: rgb(119, 119, 119);
+    font-weight: lighter;
+  }
 }
 
-.categories-box {
-  float: left;
-}
+#pagebody {
+  padding-left: 40px;
+  position: relative;
 
-.items-container {
-  margin: 20px auto;
-  max-width: 1000px;
+  .arrow-down {
+    content: '';
+    position: absolute;
+    // display: inline-block;
+    left: 712px;
+    top: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 4px;
+    border-color: #cbccc9 transparent transparent transparent;
+  }
 
-  .box {
-    border: 1px solid blue;
-    padding: 5px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    @include square(220px);
+  .categories-box {
+    border: 1px solid red;
+    padding-left: 10px;
+    width: 200px;
+    height: 300px;
+    float: left;
+  }
+
+  .items-container {
+    margin: 20px auto;
+    max-width: 1100px;
+    margin-right: 40px;
+    display: inline-block;
+
+    .box {
+      border: 1px solid blue;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      @include square(220px);
+    }
   }
 }
