@@ -3,29 +3,48 @@
   text-decoration: none;
   list-style: none; }
 
-#logo a {
+header #logo a {
   color: #e85700;
   font-family: 'Ledger', serif;
-  font-size: 36px;
+  font-size: 30px;
   text-decoration: none;
-  float: left;
-  padding-right: 25px; }
+  display: inline-block; }
 
-header ul li a {
+header ul {
+  margin-top: 14px;
+  padding-left: 26px;
+  display: inline-block; }
+
+header .header-links a {
   color: #0091ca;
-  font-weight: lighter; }
+  font-size: 12px; }
 
-form {
+header form {
   display: inline-block;
-  padding-right: 400px; }
-  form .search-field {
-    padding: 7px 10px;
-    width: 300px; }
-  form .search-submit {
-    padding: 8px 15px;
+  padding-right: 372px;
+  font-size: 12px; }
+  header form .search-field {
+    width: 312px;
+    padding: 5px 10px 4px; }
+  header form .search-submit {
     color: white;
+    padding: 6px 10px 5px;
     border: 1px solid #009ab4;
     background-color: #00aac7; }
+
+header #login {
+  border: 1px solid #0091ca;
+  padding: 3px 8px 5px 5px; }
+
+header #cart {
+  filter: grayscale(100%); }
+
+header .shopping {
+  display: inline-block;
+  border-left: 1px solid #eeeeee;
+  font-size: 12px;
+  float: right;
+  clear: both; }
 
 nav {
   border-top: 1px solid lightgrey;
@@ -36,39 +55,41 @@ ul li {
   text-align: left;
   font-size: 16px;
   font-weight: bold;
-  padding-right: 20px; }
+  padding-right: 14px; }
   ul li a {
     color: #777777;
     font-weight: lighter; }
 
 #pagebody {
-  padding-left: 40px;
   position: relative; }
   #pagebody .arrow-down {
     content: '';
     position: absolute;
-    left: 712px;
+    left: 672px;
     top: 7px;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 6px 5px 0 4px;
     border-color: #cbccc9 transparent transparent transparent; }
+  #pagebody aside {
+    position: absolute;
+    left: 40px; }
   #pagebody .categories-box {
     border: 1px solid red;
-    padding-left: 10px;
     width: 200px;
-    height: 300px;
-    float: left; }
+    height: 300px; }
   #pagebody .items-container {
+    position: absolute;
+    padding-left: 250px;
     margin: 20px auto;
-    max-width: 1100px;
+    max-width: 1200px;
     margin-right: 40px;
     display: inline-block; }
     #pagebody .items-container .box {
       border: 1px solid blue;
       margin-bottom: 20px;
       margin-left: 20px;
-      width: 220px;
-      height: 220px;
+      width: 210px;
+      height: 210px;
       float: left; }
