@@ -31,3 +31,19 @@ function buildGrid(numItems) {
 
 //Call function to build a grid of 16 Etsy item boxes
 buildGrid(16);
+
+//Function creates multiple page boxes in HTML.
+function makePageBar (numPages) {
+  var totalPages = [];
+  for (var i = 2; i <= numPages; i++) {
+    var pageHTML =
+      `<div class="pages">
+          <a class="pagelink" href="#">${i}</a>
+      </div>`;
+    totalPages.push(pageHTML);
+  }
+  return $(".pagebox").html(totalPages);
+};
+
+//Call function for making pages.
+makePageBar(8);
