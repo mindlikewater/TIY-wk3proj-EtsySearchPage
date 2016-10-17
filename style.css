@@ -1,17 +1,16 @@
 * {
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none; }
+  list-style: none;
+  max-width: 1150px; }
 
 header #logo a {
   color: #e85700;
   font-family: 'Ledger', serif;
   font-size: 30px;
-  text-decoration: none;
-  display: inline-block; }
+  text-decoration: none; }
 
 header ul {
-  margin-top: 14px;
   padding-left: 26px;
   display: inline-block; }
 
@@ -37,23 +36,26 @@ header #login {
   padding: 3px 8px 5px 5px; }
 
 header #cart {
-  filter: grayscale(100%); }
-
-header .shopping {
+  width: 45px;
   display: inline-block;
-  border-left: 1px solid #eeeeee;
-  font-size: 12px;
-  float: right;
-  clear: both; }
+  color: #666666;
+  padding-left: 10px; }
+  header #cart img {
+    width: 40%;
+    height: auto; }
+  header #cart figcaption {
+    font-size: 12px; }
 
 nav {
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey; }
+  nav ul {
+    padding-left: 22px;
+    margin: 6px; }
 
 ul li {
   display: inline;
-  text-align: left;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   padding-right: 14px; }
   ul li a {
@@ -61,35 +63,86 @@ ul li {
     font-weight: lighter; }
 
 #pagebody {
-  position: relative; }
+  position: relative;
+  background: #f3f5f0; }
+  #pagebody ul {
+    padding-top: 25px;
+    padding-left: 20px;
+    margin: 0px; }
+  #pagebody li {
+    padding-right: 110px; }
+  #pagebody .bluelink {
+    color: #0091ca; }
+  #pagebody .results {
+    font-weight: lighter;
+    padding-right: 430px; }
+  #pagebody .label-title {
+    font-weight: lighter; }
+  #pagebody li a {
+    color: #0091ca; }
   #pagebody .arrow-down {
     content: '';
     position: absolute;
-    left: 672px;
-    top: 7px;
+    left: 1114px;
+    top: 32px;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 6px 5px 0 4px;
     border-color: #cbccc9 transparent transparent transparent; }
-  #pagebody aside {
-    position: absolute;
-    left: 40px; }
   #pagebody .categories-box {
-    border: 1px solid red;
-    width: 200px;
-    height: 300px; }
-  #pagebody .items-container {
     position: absolute;
-    padding-left: 250px;
-    margin: 20px auto;
-    max-width: 1200px;
-    margin-right: 40px;
-    display: inline-block; }
+    border: 1px solid #eaeae8;
+    background: white;
+    width: 184px;
+    height: 320px;
+    margin-top: 10px;
+    margin-left: 26px;
+    overflow: auto;
+    float: left; }
+    #pagebody .categories-box ul {
+      padding: 4px; }
+      #pagebody .categories-box ul h1 {
+        font-size: 12px;
+        padding-left: 6px; }
+      #pagebody .categories-box ul li a {
+        padding-left: 20px;
+        padding-bottom: 3px;
+        display: inline-block; }
+  #pagebody .items-container {
+    padding-top: 10px;
+    padding-left: 210px;
+    margin: 0px;
+    display: inline-block;
+    background: #f3f5f0; }
     #pagebody .items-container .box {
-      border: 1px solid blue;
       margin-bottom: 20px;
-      margin-left: 20px;
+      margin-left: 16px;
+      overflow: auto;
       width: 210px;
       height: 210px;
-      float: left; }
+      float: left;
+      position: relative;
+      background: white; }
+      #pagebody .items-container .box .image {
+        width: 210px;
+        height: auto; }
+      #pagebody .items-container .box .name {
+        font-size: 12px;
+        padding: 2px 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      #pagebody .items-container .box .shop {
+        font-size: 12px;
+        padding: 2px 6px;
+        color: #a1a1a1; }
+      #pagebody .items-container .box .price {
+        position: absolute;
+        top: 190px;
+        left: 162px;
+        padding-right: 6px;
+        font-size: 12px;
+        color: #3cc438; }
+        #pagebody .items-container .box .price .dollar:before {
+          content: '$'; }

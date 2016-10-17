@@ -9,7 +9,7 @@ function makeItemBox (items) {
       <img class="image" src="${items.Images[0].url_170x135}"/>
       <div class="name">${items.title}</div>
       <div class="shop">${items.Shop.shop_name}</div>
-      <div class="price">${items.price}</div>
+      <div class="price">$${items.price}</div>
       <a class="link" href="${items.url}"></a>
     </div>`;
   return itemBox;
