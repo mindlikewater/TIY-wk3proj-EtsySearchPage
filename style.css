@@ -146,3 +146,63 @@ ul li {
         color: #3cc438; }
         #pagebody .items-container .box .price .dollar:before {
           content: '$'; }
+  #pagebody #pagebar {
+    display: inline-block;
+    width: 100%;
+    margin-left: 206px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 20px 12px; }
+    #pagebody #pagebar a {
+      color: #444444; }
+    #pagebody #pagebar .page-left {
+      width: 31px;
+      height: 33px;
+      text-align: center;
+      padding-top: 10px;
+      margin-bottom: 0px;
+      float: left;
+      background: #f3f5f0;
+      border: 1px solid #d1d1cd; }
+      #pagebody #pagebar .page-left a {
+        color: grey; }
+    #pagebody #pagebar .page-start {
+      float: left;
+      width: 31px;
+      height: 33px;
+      background: #f1f1eb;
+      text-align: center;
+      padding-top: 10px;
+      border: 1px solid #91918d; }
+    #pagebody #pagebar .pages {
+      float: left;
+      width: 31px;
+      height: 33px;
+      background: white;
+      text-align: center;
+      padding-top: 10px;
+      border: 1px solid #d1d1cd; }
+    #pagebody #pagebar .page-marker {
+      float: left;
+      width: 31px;
+      height: 33px;
+      background: #f3f5f0;
+      text-align: center;
+      padding-top: 10px;
+      border: 1px solid #d1d1cd; }
+    #pagebody #pagebar .last-page {
+      float: left;
+      width: 31px;
+      height: 33px;
+      background: white;
+      text-align: center;
+      padding-top: 10px;
+      border: 1px solid #d1d1cd; }
+    #pagebody #pagebar .page-right {
+      float: left;
+      width: 31px;
+      height: 33px;
+      background: white;
+      text-align: center;
+      padding-top: 10px;
+      border: 1px solid #d1d1cd; }

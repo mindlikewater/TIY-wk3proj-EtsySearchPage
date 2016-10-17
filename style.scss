@@ -205,4 +205,75 @@ ul li {
       }
     }
   }
+  #pagebar {
+    display: inline-block;
+    width: 100%;
+    margin-left: 206px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 20px 12px;
+
+    a {
+      color: rgb(68, 68, 68);
+    }
+
+    .page-left {
+      width: 31px;
+      height: 33px;
+      text-align: center;
+      padding-top: 10px;
+      margin-bottom: 0px;
+      float: left;
+      background: rgb(243, 245, 240);
+      border: 1px solid rgb(209, 209, 205);
+      a {
+        color: grey;
+      }
+    }
+    .page-start {
+      float: left;
+      width: 31px;
+      height: 33px;
+      background: rgb(241, 241, 235);
+      text-align: center;
+      padding-top: 10px;
+      border: 1px solid rgb(145, 145, 141);
+    }
+    .pages {
+      float: left;
+      width: 31px;
+      height: 33px;
+      background: white;
+      text-align: center;
+      padding-top: 10px;
+      border: 1px solid rgb(209, 209, 205);
+    }
+    .page-marker {
+      float: left;
+      width: 31px;
+      height: 33px;
+      background: rgb(243, 245, 240);
+      text-align: center;
+      padding-top: 10px;
+      border: 1px solid rgb(209, 209, 205);
+    }
+    .last-page {
+      float: left;
+      width: 31px;
+      height: 33px;
+      background: white;
+      text-align: center;
+      padding-top: 10px;
+      border: 1px solid rgb(209, 209, 205);
+    }
+    .page-right {
+      float: left;
+      width: 31px;
+      height: 33px;
+      background: white;
+      text-align: center;
+      padding-top: 10px;
+      border: 1px solid rgb(209, 209, 205);
+    }
+  }
 }
