@@ -132,7 +132,8 @@ ul li {
         padding: 2px 6px;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis; }
+        text-overflow: ellipsis;
+        color: rgb(161, 161, 161); }
       #pagebody .items-container .box .shop {
         font-size: 12px;
         padding: 2px 6px;
