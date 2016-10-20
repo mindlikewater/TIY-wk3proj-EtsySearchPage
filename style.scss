@@ -174,40 +174,45 @@ ul li {
       @include square(210px);
       position: relative;
       background: white;
+      .image {
+        width: 210px;
+        height: auto;
 
-      .link {
-        .image {
-          width: 210px;
+        .image:hover {
+          background-image: heart.png;
+          background-position: inherit;
+          width: 25%;
           height: auto;
         }
-        .name {
-          font-size: 12px;
-          padding: 2px 6px;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
-        .shop {
-          font-size: 12px;
-          padding: 2px 6px;
-          color: rgb(161, 161, 161);
-        }
-        .price {
-          position: absolute;
-          top: 190px;
-          left: 162px;
-          padding-right: 6px;
-          font-size: 12px;
-          color: rgb(60, 196, 56);
+      }
+      .name {
+        font-size: 12px;
+        padding: 2px 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: rgb(161, 161, 161);
+      }
+      .shop {
+        font-size: 12px;
+        padding: 2px 6px;
+        color: rgb(161, 161, 161);
+      }
+      .price {
+        position: absolute;
+        top: 190px;
+        left: 162px;
+        padding-right: 6px;
+        font-size: 12px;
+        color: rgb(60, 196, 56);
 
-          .dollar:before {
-            content: '$';
-          }
+        .dollar:before {
+          content: '$';
         }
       }
     }
   }
-  
+
   #pagebar {
     display: inline-block;
     width: 100%;
