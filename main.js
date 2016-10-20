@@ -6,11 +6,12 @@ var items = eurogames.results;
 function makeItemBox (items) {
   var itemBox =
     `<div class="box">
+      <a class="link" href="${items.url}">
       <img class="image" src="${items.Images[0].url_170x135}"/>
       <div class="name">${items.title}</div>
       <div class="shop">${items.Shop.shop_name}</div>
       <div class="price">$${items.price}</div>
-      <a class="link" href="${items.url}"></a>
+      </a>
     </div>`;
   return itemBox;
 };
