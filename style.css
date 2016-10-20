@@ -133,7 +133,7 @@ ul li {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        color: black; }
+        color: #a1a1a1; }
       #pagebody .items-container .box .shop {
         font-size: 12px;
         padding: 2px 6px;
@@ -145,8 +145,20 @@ ul li {
         padding-right: 6px;
         font-size: 12px;
         color: #3cc438; }
-        #pagebody .items-container .box .price .dollar:before {
-          content: '$'; }
+      #pagebody .items-container .box .icons img {
+        background-color: #f9f9f7;
+        text-align: center;
+        padding: 0px 2px; }
+      #pagebody .items-container .box #heart img {
+        width: 10%;
+        position: absolute;
+        top: 10px;
+        right: 30px; }
+      #pagebody .items-container .box #hamburger img {
+        width: 10%;
+        position: absolute;
+        top: 10px;
+        right: 5px; }
   #pagebody #pagebar {
     display: inline-block;
     width: 100%;
@@ -207,3 +219,12 @@ ul li {
       text-align: center;
       padding-top: 10px;
       border: 1px solid #d1d1cd; }
+
+.hide {
+  display: none; }
+
+.box:hover .visible {
+  display: none; }
+
+.box:hover .hide {
+  display: block; }

@@ -11,6 +11,8 @@ function makeItemBox (items) {
       <div class="name">${items.title}</div>
       <div class="shop">${items.Shop.shop_name}</div>
       <div class="price">$${items.price}</div>
+      <div class="hide icons" id="heart"><img src="heart.png"></div>
+      <div class="hide icons" id="hamburger"><img src="hamburger.png"></div>
       </a>
     </div>`;
   return itemBox;
@@ -48,3 +50,18 @@ function makePageBar (numPages) {
 
 //Call function for making pages.
 makePageBar(8);
+
+/*
+function showIcons (event) {
+  var target = event.target;
+  var heart = $("#heart");
+  var hamburger = $("#hamburger");
+
+  if (target.class === "box") {
+    heart.removeClass("hide");
+    hamburger.removeClass("hide");
+  }
+};
+
+var viewIcons = $(".box");
+viewIcons.mouseenter(showIcons); */
