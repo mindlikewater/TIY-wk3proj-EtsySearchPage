@@ -2,7 +2,7 @@
 
 This project is a recreation of an Etsy Search page.
 
-My project can be found at: [Tai's Etsy Search Page Mockup] https://mindlikewater.github.io/TIY-wk3proj-EtsySearchPage.
+My project can be found at: [Tai's Etsy Search Page Mockup]: https://mindlikewater.github.io/TIY-wk3proj-EtsySearchPage.w.
 
 # Objective
 
